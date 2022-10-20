@@ -138,7 +138,11 @@ cursor: pointer;
     }
     .front{
         width: 85%;
+        transition: 2s;
     }
+    .front:hover {
+        transform: scale(3.5); 
+       }
     
     input{
         cursor: pointer;
