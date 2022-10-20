@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <link type="image/png" sizes="32x32" rel="icon" href="img/favicon.png">
+    <title>music player</title>
+</head>
+<body>
+<div class="music">
+    <header class="header">
+        <h1>Music</h1>
+        <div class="header__checkbox-theme">
+            <div class="header__btn-theme"></div>
+        </div>
+    </header>
+    <section class="output">
+        <div class="righr_output">
+            <img src="img/front.jpg" alt="" class="front">
+        </div>
+        <div class="left_output">
+            <audio autoplay style="width:700px" id="audio">
+                <source src="audio/01. Кест - Быть с тобой.mp3" id="audioSource">
+                </audio>
+            <marquee behavior="alternate" class="title"> </marquee>
+            <div class="contrls">
+                <div>
+                    <img id="playButton" src="img/icons8_play.png">
+                </div>
+                <div>
+                    <img id="rewaindBack" src="img/icons8-prev.png">
+                </div>
+                <div>
+                    <img id="rewaindForward" src="img/icons8-next.png">
+                </div>
+                <div>
+                    <img id="stopButton" src="img/icons8-stop.png">
+                </div>
+            </div>
+            <input type="range" min="0" max="1" value="0.3" step="0.1" id="vol">
+        </div>
+    </section>
+    <section class="playlist container">
+        <p class="music1 btn">01. Кест - Быть с тобой.mp3</p>
+        <p class="music2 btn">02. Кест & Олег Безъязыков - Не Из Золота.mp3</p>
+        <p class="music3 btn">03. Кест,Алена Дождь - Остров Вечной Весны.mp3</p>
+        <p class="music4 btn">04. Кест - Бегут года.mp3</p>
+        <p class="music5 btn">05. Кест - Как нелегко идти.mp3</p>
+        <p class="music6 btn">06. Кест,Сергей Чуйко - Криминал.mp3</p>
+        <p class="music7 btn">07. Кест - Не губите.mp3</p>
+        <p class="music8 btn">08. Кест - Не уснуть.mp3</p>
+        <p class="music9 btn">09. Кест, Сергей Чуйко - Мани-лавандосы.mp3</p>
+        <p class="music10 btn">10. Кест, Сергей Чуйко - Девчонки.mp3</p>
+        <p class="music11 btn">11. Кест - Я по жизни поэт.mp3</p>
+    </section>
+</div>
+
+<script src="script/script.js"></script>
+</body>
+
+</html>
